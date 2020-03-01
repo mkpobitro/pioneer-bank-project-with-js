@@ -1,3 +1,56 @@
 body{
-    padding: 100px; 
+
 }
+
+#login-area{
+    margin-top: 150px;
+}
+.form-area{
+    box-shadow: 5px 5px 15px lightgray;
+}
+
+.form-area input{
+    margin-bottom: 10px;
+}
+
+
+/* Transaction Area */
+
+#transaction-area{
+    margin-top: 100px;
+    display: none;
+}
+
+.transaction-amount{
+    margin: 100px 0;
+}
+
+.status{
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    padding-left: 40px;
+}
+.deposit{
+    background: #5E4FC7;
+}
+.withdraw{
+    background: #F09670;
+}
+.balance{
+    background: #EF9B01;
+}
+
+.deposit-amount-box, 
+.withdraw-amount-box{
+    box-shadow: 5px 5px 15px lightgray;
+    padding: 30px;
+}
+
+.transaction-amount input{
+    margin: 15px 0;
+}
+
+
+
+
