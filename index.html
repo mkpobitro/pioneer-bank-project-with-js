@@ -83,6 +83,7 @@
             transactionArea.style.display = "block";
         })
 
+
         // Deposit Button Event Handler
         const depositBtn = document.getElementById("depositBtn");
         depositBtn.addEventListener("click", function () {
@@ -99,11 +100,15 @@
 
             document.getElementById("depositAmount").value = "";
 
+
+
             //Withdraw Button Event handler
             const withdrawBtn = document.getElementById("withdrawBtn");
             withdrawBtn.addEventListener("click", function () {
                 const withdrawAmountNumber = getInputNumber("withdrawAmount");
-                console.log(withdrawAmountNumber);
+
+                updateSpanText("currentWithdraw", withdrawAmountNumber);
+                updateSpanText("currentBalance", -1 * withdrawAmountNumber);
             })
 
 
@@ -113,6 +118,7 @@
                 const amountNumber = parseFloat(amount);
                 return amountNumber;
             }
+
 
             function updateSpanText(id, depositAmountNumber) {
                 const current = document.getElementById(id).innerText;
